@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BGColor"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="297dp"
+        android:layout_height="316dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/retro_woman"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="45sp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dimen_22dp"
+        android:layout_marginTop="@dimen/dimen_35dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:text="I N K E D"
+        android:textSize="@dimen/dimen_45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_22dp"
+        android:layout_marginTop="@dimen/dimen_320dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/register"
+        android:textSize="@dimen/dimen_45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <android.widget.EditText
+        android:id="@+id/usernameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="sans-serif-light"
+        android:padding="@dimen/dimen_18dp"
+        android:hint="@string/username"
+        android:textSize="@dimen/dimen_25sp"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registration">
+
+    </android.widget.EditText>
+
+    <android.widget.EditText
+        android:id="@+id/emailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="sans-serif-light"
+        android:padding="@dimen/dimen_18dp"
+        android:hint="@string/e_mail"
+        android:textSize="@dimen/dimen_25sp"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usernameET">
+
+    </android.widget.EditText>
+
+    <android.widget.EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="sans-serif-light"
+        android:padding="18dp"
+        android:hint="@string/password"
+        android:textSize="@dimen/dimen_25sp"
+        android:theme="@style/EditTextTheme"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailET">
+
+    </android.widget.EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_90dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:backgroundTint="@color/editTextBG"
+        android:fontFamily="sans-serif-light"
+        android:padding="@dimen/dimen_15dp"
+        android:text="Confirm"
+        android:id="@+id/confirm_button"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
